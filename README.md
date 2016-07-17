@@ -5,7 +5,7 @@ Play it [here](https://townsean.github.io/mini-ld-69/)!
 
 ## Synopsis
 
-The Spread is an abstract, 3D puzzle game.  Players aim a ball and launch it into a group of existing balls.  When the launched ball makes contact with another ball it spreads its color to the ball it touched. This may trigger a ripple effect if the contacted ball is pushed into another ball.  The objective of the game is colonizing all of the balls by spreading the original ball color to all of the balls.
+The Spread is an abstract, 3D puzzle game.  Players aim a ball and launch it into a group of existing balls.  When the launched ball makes contact with another ball it spreads its color to the ball it touched. This may trigger a ripple effect if the contacted ball is pushed into another ball.  The objective of the game is to colonize all of the balls by spreading the original ball color to all of the balls.
 
 ## Motivation
 
