@@ -4,7 +4,7 @@ var engine = new BABYLON.Engine(canvas, true);
 var createScene = function() {
     // set the scene and background color
     var scene = new BABYLON.Scene(engine);
-    scene.clearColor = new BABYLON.Color3(0,0,0.2);
+    scene.clearColor = new BABYLON.Color3(0.66, 0.66, 0.66);
     scene.enablePhysics();
 
     // create a camera
