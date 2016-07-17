@@ -5,6 +5,7 @@ var createScene = function() {
     // set the scene and background color
     var scene = new BABYLON.Scene(engine);
     scene.clearColor = new BABYLON.Color3(0,0,0.2);
+    scene.enablePhysics();
 
     // create a camera
     var camera = new BABYLON.ArcRotateCamera("Camera", 1.0, 1.0, 12, BABYLON.Vector3.Zero(), scene);
@@ -19,8 +20,9 @@ var createScene = function() {
     light.groundColor = new BABYLON.Color3(0.5, 0, 0.5);
 
     // create a builtin shape
-    var box = BABYLON.Mesh.CreateBox("mesh", 3, scene);
+    var box = BABYLON.Mesh.CreateBox("mesh", 1, scene);
     box.showBoundingBox = true;
+    box.position.y = 1;
 
     // Define a material
     var material = new BABYLON.StandardMaterial("std", scene);
@@ -28,6 +30,10 @@ var createScene = function() {
 
     // apply the material
     box.material = material;
+
+    // create a builtin shape for ground
+    var ground = BABYLON.Mesh.CreateGround("ground", 10, 10, 2, scene);
+    ground.material = new BABYLON.GridMaterial("groundMaterial", scene);
 
     // load background music
     var backgroundAudio = new BABYLON.Sound("BackgroundAudio", "assets/Around_the_World.mp3", 
