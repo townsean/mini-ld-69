@@ -51,6 +51,15 @@ var createScene = function() {
         if (event.keyCode === 96) {
             ballSoundEffect.play();
         }
+
+        // if keyM pressed toggle between mute and unmute
+        if (event.keyCode === 77) {
+            if (BABYLON.Engine.audioEngine.getGlobalVolume() === 0) {
+                BABYLON.Engine.audioEngine.setGlobalVolume(1);
+            } else {                
+                BABYLON.Engine.audioEngine.setGlobalVolume(0);
+            }
+        }
     }); 
 
     return scene;
