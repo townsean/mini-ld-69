@@ -1,0 +1,36 @@
+{
+  "name": "mini-ld-69",
+  "version": "1.0.0",
+  "description": "MiniLD #69 - Colonization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -o -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/townsean/mini-ld-69.git"
+  },
+  "keywords": [
+    "minild",
+    "ludum",
+    "dare",
+    "babylonjs"
+  ],
+  "author": "Ashley Grenon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/townsean/mini-ld-69/issues"
+  },
+  "homepage": "https://github.com/townsean/mini-ld-69#readme",
+  "jspm": {
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}
