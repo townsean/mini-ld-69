@@ -1,7 +1,7 @@
 # mini-ld-69
 Source code for my [MiniLD #69](http://ludumdare.com/compo/2016/07/10/minild-69-colonization/) entry, The Spread.  The theme for [MiniLD #69](http://ludumdare.com/compo/2016/07/10/minild-69-colonization/) is colonization.
 
-Play it [here](https://townsean.github.io/mini-ld-69/)!
+Play it [here](https://townsean.github.io/mini-ld-69/)! (Work in progress)
 
 ## Synopsis
 
