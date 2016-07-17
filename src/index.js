@@ -29,6 +29,30 @@ var createScene = function() {
     // apply the material
     box.material = material;
 
+    // load background music
+    var backgroundAudio = new BABYLON.Sound("BackgroundAudio", "assets/Around_the_World.mp3", 
+        scene, null, { loop: true, autoplay: true, volume: 0.50});
+
+    // load sound effect for the ball launching
+    var launchSoundEffect = new BABYLON.Sound("LaunchSoundEffect", "assets/Jingle_Win_Synth_01.wav", 
+        scene);
+
+     // load sound effect for the ball contact
+    var ballSoundEffect = new BABYLON.Sound("BallSoundEffect", "assets/UI_Synth_02.wav", 
+        scene);
+
+    window.addEventListener("keydown", function(event) {
+        // if space bar pressed
+        if (event.keyCode === 32) {
+            launchSoundEffect.play();
+        }
+
+        // if numpad 0 pressed
+        if (event.keyCode === 96) {
+            ballSoundEffect.play();
+        }
+    }); 
+
     return scene;
 };
 
