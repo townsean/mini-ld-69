@@ -19,20 +19,19 @@ var createScene = function() {
     // reflect the light off the ground to the light the mesh bottom
     light.groundColor = new BABYLON.Color3(0.5, 0, 0.5);
 
-    // create a builtin shape
-    var box = BABYLON.Mesh.CreateBox("mesh", 1, scene);
-    box.showBoundingBox = true;
-    box.position.y = 1;
+    // create ball material
+    var ballMaterial = new BABYLON.StandardMaterial("ballMaterial", scene);
+    ballMaterial.diffuseColor = new BABYLON.Color3(0.0, 0.0, 1.0);
 
-    // Define a material
-    var material = new BABYLON.StandardMaterial("std", scene);
-    material.diffuseColor = new BABYLON.Color3(0.5, 0, 0.5);
-
-    // apply the material
-    box.material = material;
+    // draw 5 balls
+    for(var x = 0; x < 5; x++) {
+        var ball = BABYLON.Mesh.CreateSphere("ball" + x, 16, 1.0, scene, false);
+        ball.material = ballMaterial;
+        ball.position = new BABYLON.Vector3(x, 0.5, 0);
+    }
 
     // create a builtin shape for ground
-    var ground = BABYLON.Mesh.CreateGround("ground", 10, 10, 2, scene);
+    var ground = BABYLON.Mesh.CreateGround("ground", 12, 12, 2, scene);
     ground.material = new BABYLON.GridMaterial("groundMaterial", scene);
 
     // load background music

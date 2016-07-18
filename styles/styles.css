@@ -30,3 +30,12 @@ body {
     height: 100%;
     touch-action: none;
 }
+
+#test {
+    position: absolute;
+    right: 30px;
+    top: 45px;
+    font-size: 3em;
+    color: white;
+    font-family: "Segoe UI";
+}
