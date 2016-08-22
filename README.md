@@ -3,6 +3,8 @@ Source code for my [MiniLD #69](http://ludumdare.com/compo/2016/07/10/minild-69-
 
 Play it [here](https://townsean.github.io/mini-ld-69/)! (Work in progress)
 
+(The code is not very pretty...yet.)
+
 ## Synopsis
 
 The Spread is an abstract, 3D puzzle game.  Players aim a ball and launch it into a group of existing balls.  When the launched ball makes contact with another ball it spreads its color to the ball it touched. This may trigger a ripple effect if the contacted ball is pushed into another ball.  The objective of the game is to *colonize* all of the balls by spreading the original ball color to each existing ball.
@@ -13,9 +15,13 @@ I really struggled with brainstorming game ideas that would fit the theme of col
 
 ## Built With
 * [Babylon.js] (http://www.babylonjs.com/)
+* [Pointer](http://opengameart.org/content/pointers-part-5)
 * Background Music - [Around the World](http://opengameart.org/content/around-the-world)
 * Sound Effects - [Electric Sound Library](http://opengameart.org/content/electric-sound-effects-library) (UI_Synth_02, Jingle_Win_Synth_01)
 * [Visual Studio Code](https://code.visualstudio.com)
+
+### Useful tutorials (besides the docs)
+* [Understanding DeviceOrientation events by creating a small 3D game with babylon.js](https://www.eternalcoding.com/?p=213)
 
 ## License
 

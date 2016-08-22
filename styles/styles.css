@@ -31,10 +31,10 @@ body {
     touch-action: none;
 }
 
-#test {
+#ballCountDisplay {
     position: absolute;
-    right: 30px;
-    top: 45px;
+    left: 40%;
+    top: 10%;
     font-size: 3em;
     color: white;
     font-family: "Segoe UI";
